@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Login</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="icon" type="image/png" href="../icon.png">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Login</h2>
+
+        <input id="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
+
+        <button onclick="loginStudent()">Login</button>
+
+        <h3 style="text-align: center;">OR</h3>
+
+        <button class="google-btn" onclick="googleLogin()">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="google icon">
+            Login with Google
+        </button>
+
+    </div>
+
+    <script type="module" src="js/firebase-init.js"></script>
+    <script type="module" src="js/student-login.js"></script>
+
+</body>
+
+</html>

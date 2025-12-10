@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Signup</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="icon" type="image/png" href="../icon.png">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Sign Up</h2>
+
+        <input id="name" placeholder="Full Name">
+        <input id="age" placeholder="Age">
+        <input id="contact" placeholder="Contact Number">
+        <input id="college" placeholder="College Name">
+
+        <input id="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Create Password">
+
+        <button onclick="signupStudent()">Sign Up</button>
+
+        <h3 style="text-align: center;">OR</h3>
+
+        <button class="google-btn" onclick="googleSignup()">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="google icon">
+            Sign up with Google
+        </button>
+
+    </div>
+
+    <script type="module" src="js/firebase-init.js"></script>
+    <script type="module" src="js/student-signup.js"></script>
+
+</body>
+
+</html>

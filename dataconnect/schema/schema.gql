@@ -1,0 +1,53 @@
+type User @table {
+  email: String!
+  displayName: String!
+  userType: String!
+  createdAt: Timestamp!
+  firstName: String
+  lastName: String
+  department: String
+  studentId: String
+  profilePictureUrl: String
+}
+
+type Announcement @table {
+  title: String!
+  content: String!
+  publishedAt: Timestamp!
+  audience: String!
+  expirationDate: Date
+  creator: User
+}
+
+type Event @table {
+  title: String!
+  description: String!
+  startTime: Timestamp!
+  endTime: Timestamp!
+  location: String!
+  eventType: String!
+  imageUrl: String
+  maxAttendees: Int
+  isRSVPRequired: Boolean
+  organizer: User
+}
+
+type Department @table {
+  name: String!
+  contactEmail: String!
+  contactPhone: String!
+  websiteUrl: String
+  description: String
+  officeLocation: String
+}
+
+type ServiceRequest @table {
+  subject: String!
+  description: String!
+  requestType: String!
+  submittedAt: Timestamp!
+  status: String!
+  requester: User
+  assignedTo: User
+  resolutionNotes: String
+}
